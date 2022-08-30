@@ -1,0 +1,21 @@
+{
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true, // 保存时设置文件的格式。格式化程序必须可用，不能自动保存文件，并且不能关闭编辑器。
+    "editor.formatOnSave": true,
+    // #每次保存的时候将代码按eslint格式进行修复
+    "eslint.autoFixOnSave": true,
+    // 定义函数的左大括号是否放置在新的一行。
+    "javascript.format.placeOpenBraceOnNewLineForFunctions": true,
+    // 定义控制块的左括号是否放置在新的一行。
+    "javascript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+    // 在一定数量的等宽字符后显示垂直标尺。输入多个值，显示多个标尺。若数组为空，则不绘制标尺。
+    "editor.rulers": [
+        80,
+        100
+    ],
+    // 默认行尾字符。使用 \n 表示 LF，\r\n 表示 CRLF。
+    "files.eol": "\n",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    }
+}
