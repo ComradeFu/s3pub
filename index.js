@@ -99,6 +99,7 @@ async function __s3_put(file_path)
     if (conf.headers)
     {
         let relative = path.relative(base_file_path, file_path)
+        relative = relative.replace(/\\/g, '/') //normal
         let headers = conf.headers[relative] || conf.headers.default
         if (headers)
         {
